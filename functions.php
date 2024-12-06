@@ -25,3 +25,35 @@ function setup_theme() {
 add_action('after_setup_theme', 'setup_theme');
 
 require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+if( function_exists('acf_add_options_page') ) {
+
+    acf_add_options_page(array(
+        'page_title'     => 'Opções do Tema',
+        'menu_title'    => 'Opções do Tema',
+        'menu_slug'     => 'tema',
+        'capability'    => 'edit_posts',
+        'icon_url' => 'dashicons-layout',
+        // 'icon_url' => 'dashicons-schedule',
+        'position' => 2,
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Opções Gerais',
+        'menu_title'    => 'Opções Gerais',
+        'menu_slug'     => 'configuracoes-do-tema',
+        'capability'    => 'edit_posts',
+        'parent_slug'    => 'tema'
+        // 'redirect'      => false
+    ));
+
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Página Inicial',
+        'menu_title'    => 'Página Inicial',
+        'menu_slug'     => 'pagina-inicial',
+        'capability'    => 'edit_posts',
+        'parent_slug'    => 'tema'
+        // 'redirect'      => false
+    ));
+
+}
