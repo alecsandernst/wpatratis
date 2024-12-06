@@ -1,0 +1,499 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    background-image: url("../img/bannerbiolabs.jpeg");
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 0;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar-nav {
+    gap: 15px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 10px 15px;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+    transition: color 0.7s ease;
+}
+
+.navbar-nav .nav-item:nth-last-child(2) {
+    margin-right: 30px;
+}
+
+/* Botão "Fale conosco" */
+.btn-contact {
+    background-color: #520660;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: -1em;
+}
+
+.btn-contact:hover {
+    background-color: #ffffff;
+    color: #520660;
+    transition: ease-out 0.7s;
+}
+
+/* Texto do conteúdo principal */
+.texto {
+    font-size: 1em;
+    text-align: left;
+    padding-top: 100px;
+}
+
+.h11 {
+    font-size: 2em;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+span {
+    font-weight: 500;
+}
+
+.lorem {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+}
+
+/* Estilos do botão "Saiba mais" */
+.b1 {
+    background-color: #520660;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.b1:hover {
+    background-color: #ffffff;
+    color: #520660;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.b1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.b1 a:hover {
+    color: #520660;
+}
+
+/* Seção "Quem somos" */
+.quem-somos {
+    padding: 20px;
+}
+
+.quem-somos h2 {
+    color: #520660;
+    font-size: 2em;
+    text-align: left;
+    font-weight: 700;
+}
+
+.quem-somos p {
+    color: #655679;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    justify-items: flex-start;
+}
+
+.quem-somos img {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seção "O que fazemos" */
+.que-fazemos {
+    background-image: url(../img/rectangle-418.png);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.imagem-que-fazemos {
+    display: flex;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+    .imagem-que-fazemos {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+}
+
+.content-texto {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-texto h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+}
+
+.content-texto h3 {
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+
+.content-texto h2 {
+    font-size: 28px;
+}
+
+.content-texto span {
+    font-weight: 700;
+}
+
+.content-texto ul {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 18px;
+}
+
+.content-texto p {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 18px;
+}
+
+/* Seção "Números" */
+.numeros {
+    padding-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.numeros h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 29px;
+}
+
+.numeros span {
+    font-weight: 700;
+}
+
+/* Estatísticas */
+.estatistica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.item {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+
+@media (min-width: 768px) {
+    .item {
+        flex-basis: auto;
+    }
+}
+
+.item span {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+.item p {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 0px;
+}
+
+/* Nosso Time */
+.nosso-time {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.titulo-pequeno {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.titulo-pequeno h3 {
+    padding-top: 7px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #E413C6;
+}
+
+.titulo h2 {
+    display: flex;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #320065;
+}
+
+/* Imagens do time */
+.pessoas {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.pessoas img {
+    width: 400px;
+    border-radius: 3px;
+}
+
+/* Mentores */
+.mentores {
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+}
+
+.tituloMentores {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+.tituloMentores h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.tituloMentores h3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #E413C6;
+    margin-bottom: -10px;
+    letter-spacing: 2px;
+}
+
+.tituloMentores h2 {
+    font-weight: 700;
+    font-size: 28px;
+    color: #320065;
+}
+
+/* Contato */
+.contato {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.contato h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #320065;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    background-color: #520660;
+    padding: 40px;
+    border-radius: 2px;
+    color: white;
+    margin-top: -50px;
+}
+
+.formulario form {
+    width: 100%;
+}
+
+.formulario h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: left;
+    color: white;
+}
+
+.formulario p {
+    margin-top: 5px;
+    text-align: left;
+}
+
+.label {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+.form-group input::placeholder {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.btn-enviar {
+    background-color: white;
+    color: #520660;
+    border: none;
+    padding: 10px 25px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn-enviar:hover {
+    background-color: #520660;
+    color: white;
+    transition: ease-out 0.7s;
+}
+
+/* Footer */
+footer {
+    background-color: #320065;
+    color: white;
+    padding: 20px;
+}
+
+footer p {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .texto {
+        text-align: center;
+    }
+
+    .h11 {
+        font-size: 1.5em;
+    }
+
+    .container .row {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .quem-somos h2 {
+        text-align: center;
+    }
+
+    .quem-somos img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .pessoas {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    .h11 {
+        font-size: 1.2em;
+    }
+
+    .btn-contact {
+        margin-top: 10px;
+    }
+
+    .form-group {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

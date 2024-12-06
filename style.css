@@ -1,0 +1,1166 @@
+/* 
+Theme Name: Site BIOLabs
+Theme URI: https://biolabs.com.br
+Author: Naamã Alecsander
+Author URI: https://biolabs.com.br
+Description: Site da BIOLABS
+Version: 1.0
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, full-site-editing
+*/
+
+/* Reset básico */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    transition: 1s;
+    width: 100%;
+}
+
+.container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar-nav {
+    gap: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 10px 10px;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+    transition: color 0.7s ease;
+}
+
+.navbar-nav .nav-item:nth-last-child(2) {
+    margin-right: 43px;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Botão "Fale conosco" */
+.btn-contact {
+    background-color: #520660;
+    color: white;
+    border: none;
+    padding: 6px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: #ffffff;
+    color: #520660;
+    transition: ease-out 0.7s;
+}
+
+/* Texto do conteúdo principal */
+.texto {
+    font-size: 1em;
+    text-align: left;
+    margin-top: 184px !important; 
+    margin-bottom: 100px;
+}
+
+.h11 {
+    font-size: 40px;
+    line-height: 44.5px;
+    margin-bottom: 17px;
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.owl-banner-principal h1.h11 span {
+    font-weight: 700 !important; 
+    font-size: 40px !important;
+    line-height: 44.5px;
+}
+
+.lorem {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 29px;
+    margin-bottom: 26px;
+}
+
+/* Botão "Saiba mais" */
+.b1 {
+    background-color: #520660;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    border: none;
+    padding: 6px 35px;
+    line-height: 29px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.b1:hover {
+    background-color: #ffffff;
+    color: #520660;
+    transition: background-color 0.7s ease, color 0.7s ease;
+}
+
+.b1 a {
+    color: white;
+    text-decoration: none;
+}
+
+.b1 a:hover {
+    color: #520660;
+}
+
+/* Responsividade para telas menores */
+@media screen and (max-width: 1200px) {
+    header {
+        height: 500px;
+    }
+    .navbar-nav .nav-link {
+        gap: 4em;
+    }
+    .h11 {
+        font-size: 1.8em;
+    }
+    .lorem {
+        font-size: 0.9em;
+    }
+    .b1 {
+        padding: 8px 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        height: 400px;
+    }
+    .h11 {
+        font-size: 1.5em;
+        margin-top: -3em;
+    }
+    .lorem {
+        font-size: 0.8em;
+    }
+    .b1 {
+        padding: 7px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 350px;
+    }
+    .h11 {
+        font-size: 1.2em;
+        margin-top: -4em;
+    }
+    .lorem {
+        font-size: 0.7em;
+    }
+    .b1 {
+        font-size: 0.8em;
+        padding: 6px 18px;
+        margin-top: -1em;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        height: 300px;
+    }
+    .h11 {
+        font-size: 1em;
+        margin-top: -6em;
+    }
+    .lorem {
+        font-size: 0.6em;
+    }
+    .b1 {
+        font-size: 0.6em;
+        padding: 5px 15px;
+        margin-top: -3em;
+    }
+}
+
+/* Seção "Quem somos" */
+.quem-somos .texto {
+    margin-top: 150px !important;
+}
+
+    .quem-somos h2 {
+        font-family: "Space Grotesk", sans-serif;
+        color: #320065;
+        font-size: 2em;
+        text-align: left;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .quem-somos span {
+        font-weight: 400;
+    }
+
+    .quem-somos p {
+        color: #655679;
+        font-family: "Sora", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .quem-somos img {
+        padding-top: 99px;
+        padding-bottom: 99px;
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+    }
+
+    .quem-somos h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 2px;
+        color: #E413C6;
+        line-height: 28px;
+    }
+
+    .linha-quem-somos {
+        height: 14px !important;
+        margin-top: 80px !important;
+        margin-left: -350px !important;
+    }
+
+    .marca {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 133.09px;
+        color: #F6F6F6;
+        line-height: 112.29px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: absolute;
+        z-index: 0;
+        right: 1px;
+        margin-right: -15px !important;
+        margin-top: -118px;
+        
+    }
+
+.carrosel {
+    height: 400px;
+    width: 100%;
+    max-width: 1200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Seção "O que fazemos" */
+.que-fazemos {
+    background-image: url(../img/rectangle-418.png);
+    background-size: cover;
+    background-position: center;
+    padding: 80px 0;
+    color: white;
+}
+
+.imagem-que-fazemos {
+    display: flex;
+    width: 100%;
+    max-width: 570px;
+    height: auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+    .imagem-que-fazemos {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1em;
+    }
+}
+
+.content-texto {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+    .titulo-texto {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 4px;
+    }
+    .content-texto h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    .content-texto span {
+        font-weight: 700;
+    }
+
+    .content-texto ul {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 31px;
+        padding-left: 18px;
+    }
+
+    .content-texto p {
+        font-family: "Sora", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        padding-left: 18px;
+    }
+
+/* Seção "Números" */
+.numeros {
+    padding-top: 48px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .numeros h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 29px;
+        line-height: 41.54px;
+        margin: 0;
+    }
+
+    .numeros span {
+        font-weight: 700;
+    }
+
+/* Estatísticas */
+.estatistica {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.item {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    flex-basis: 100%;
+}
+
+.item span{
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 70px !important;
+    line-height: 79px;
+}
+
+    @media (min-width: 768px) {
+        .item {
+            flex-basis: auto;
+        }
+    }
+
+    .item span {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 70px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+
+    .item p {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        padding: 0px;
+    }
+
+/* Nosso Time */
+.nosso-time {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.titulo-pequeno {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+    .titulo-pequeno h3 {
+        padding-top: 7px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        letter-spacing: 1px;
+        line-height: 28px;
+        color: #E413C6;
+    }
+
+    .titulo h2 {
+        display: flex;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #320065;
+    }
+
+.texto-seta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .setas {
+        display: flex;
+        gap: 10px;
+    }
+
+    .imagens {
+        padding: 20px;
+    }
+
+    .pessoas {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+        }
+        
+        .pessoas img {
+            width: 400px;
+            border-radius: 3px;
+        }
+        
+        .imagem-container {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .texto-sobre-imagem {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            position: absolute;
+            bottom: 0.1em;
+            left: 2em;
+            color: white;
+            transition: opacity 0.3s ease-in-out;
+            pointer-events: none;
+            user-select: none;
+        }
+      
+      .imagem-container h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 1.3em;
+        line-height: 33px;
+      }
+      
+      .imagem-container p {
+        font-family: "Sora", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        line-height: 25px;
+        pointer-events: none;
+        user-select: none;
+      }
+      
+      .imagem-container img {
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .imagem-container:hover img {
+        transform: scale(1.2);
+      }
+      
+      .imagem-container::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #520660;
+        transform: translateY(100%);
+        transition: transform 0.3s ease-in-out;
+      }
+      
+      .overlay {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 159px;
+        left: 10px;
+        right: 10px;
+        color: white;
+        opacity: 0;
+        z-index: 1;
+        transition: opacity 0.3s ease-in-out;
+
+      }
+
+      .haverText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .imagem-container:hover::after {
+        transform: translateY(0);
+      }
+      
+      .imagem-container:hover .overlay {
+        opacity: 1;
+      }
+
+@media (max-width: 992px) {
+    .pessoas {
+        flex-direction: column;
+        align-items: center;
+    }
+    .haverText {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -3em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .pessoas {
+        gap: 20px;
+    }
+
+    .imagem-container img {
+        width: 100%;
+    }
+
+    .haverText {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .titulo h2 {
+        font-size: 20px;
+    }
+
+    .setas {
+        display: none;
+    }
+}
+
+
+.startups {
+    background-color: #F6F6F6;
+}
+
+.tituloStartup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 10px;
+}
+
+    .tituloStartup h2{
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        color: #320065;
+        margin-bottom: -5px;
+    }
+
+    .tituloStartup h3 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 300;
+        font-size: 28px;
+        color: #520660;
+        line-height: 40px;
+    }
+
+    .passadorStartup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+    }
+
+    .passadorStartup img {
+        width: 250px;
+
+    }
+
+.content.imagens {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.mentores img {
+    max-width: 100%; /* Garante que a largura da imagem não exceda o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Evita que a imagem seja cortada */
+    display: block; /* Remove possíveis margens extras */
+    margin: 0 auto; /* Centraliza a imagem no contêiner */
+  }
+  
+  /* Ajusta o contêiner das imagens */
+  .mentores .p-3 {
+    display: flex; /* Permite o alinhamento flexível */
+    align-items: center; /* Alinha verticalmente ao centro */
+    justify-content: center; /* Centraliza horizontalmente */
+    min-height: 200px; /* Garante espaço vertical para as imagens */
+  }
+
+.imagensJornada img {
+    max-width: 100%;
+    height: auto; 
+}
+
+@media (max-width: 576px) {
+    .row-cols-4 > * {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+    .row-cols-4 > * {
+        flex: 0 0 33.33%; 
+        max-width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) {
+    .row-cols-4 > * {
+        margin-left: 40em;
+        flex: 0 0 25%; 
+        max-width: 25%;
+    }
+}
+
+
+
+.imagens-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+    .image-zoom {
+        transition: transform 0.5s ease-in-out, filter 0.3s ease-in-out;
+    }
+
+    
+    .image-zoom:hover {
+        transform: scale(1.05);
+        filter: brightness(1.05);
+    }
+
+
+/* Mentores */
+.mentores {
+    background-color: #F6F6F6;
+    padding-bottom: 50px;
+}
+
+.tituloMentores {
+    padding-top: 40px;
+    gap: 10px;
+}
+
+.tituloMentores h2,
+.tituloMentores h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.tituloMentores h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #E413C6;
+    letter-spacing: 2px;
+}
+
+.tituloMentores h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 33px;
+    color: #320065;
+}
+
+.passadorr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+/* - Jornada - */
+
+.tituloJornada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.tituloJornada h2, h3 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.tituloJornada h3 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #E413C6;
+    letter-spacing: 2px;
+}
+
+.tituloJornada h2 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    color: #320065;
+}
+
+.tab-button {   
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 29px;
+    margin-top: 26px;
+    padding: 10px 19px !important;
+    border-radius: 1px !important;
+    font-weight: bold;
+    transition: all 0.5s ease; 
+    border: 1px solid #520660;
+}
+
+.tab-button.active {
+    transform: scale(1.1);
+    background-color: #520660 !important; 
+    color: white; 
+    border-color: #520660; 
+}
+
+.tab-button:not(.active) {
+    background-color: #f8f9fa; 
+    color: #520660;
+    border-color: #520660; 
+}
+
+.tab-button {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.tab-button:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 576px) {
+    .tab-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+.content-one {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 60px 0 70px;        
+    align-items: baseline;
+    gap: 20px;
+}
+
+.elipse-container {
+    background-color: #52066033;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.text-container h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    color: #320065;
+}
+
+.text-container ul {
+    padding: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.text-container li {
+    white-space: nowrap;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 5px;
+    color: #655679;
+}
+
+@media (max-width: 1200px) {
+    .content-one {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .content-one {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .text-container h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-one {
+        grid-template-columns: 1fr;
+    }
+
+    .elipse-container {
+        width: 60px;
+        height: 60px;
+    }
+
+    .text-container h3 {
+        font-size: 18px;
+    }
+
+    .text-container li {
+        font-size: 14px;
+    }
+}
+
+/* - CONTATO - */
+
+.contato {
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+    .contato h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: #320065;
+    }
+
+.content-telefone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.telefone, .endereco {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+    .telefone a, .endereco a {
+        font-family: "Sora", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        color: #6B6976;
+        text-decoration: none;
+        margin-top: 20px;
+    }
+
+.btnmapa {
+    text-decoration: none;
+    padding: 8px 14px;
+    background: #520660;
+    color: #fff;
+    font-family: "Sora", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 35px;
+}
+
+.formulario {
+    background-color: #520660;
+    padding: 40px;
+    border-radius: 2px;
+    color: white;
+    margin-top: -50px;
+}
+
+    .formulario h2 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        color: white;
+    }
+
+    .formulario p {
+        margin-top: 5px;
+        text-align: left;
+    }
+
+    .form-field label {
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    .form-field input {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.submit-btn {
+    background-color: white;
+    color: #6a0dad;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    .submit-btn:hover {
+        background-color: orchid;
+    }
+
+footer {
+    background-color: #520660;
+    padding-top: 4em;
+    padding-bottom: 0.8em;
+  }
+  
+  .social-icon {
+    border: 1px solid white;
+    padding: 10px;
+    width: 2.5em;
+    height: 2.5em;
+  }
+  
+  .social-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer .menu, footer .content-contato {
+  display: flex;
+  flex-direction: column;
+    }  
+
+    footer h4 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+    footer ul {
+    padding-left: 0;
+    list-style-type: disc;
+    margin-left: 0;
+    }
+
+    footer li {
+    font-family: "Sora", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    padding-left: 20px;
+    position: relative;
+    }
+
+    footer li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 100%;
+    margin-top: 10px;
+    }
+    
+    footer .menu ul {
+        list-style-type: disc;
+    }
+
+    footer a.lgpd { 
+        text-decoration: underline; 
+        transition: color 0.3s ease; 
+    }
+   
+    footer a.lgpd:hover {
+        color: #0056b3; 
+        text-decoration: underline;
+    }
+  
+@media (max-width: 576px) {
+footer li {
+    padding-left: 15px;
+}
+}
+  
+  
+  @media (max-width: 576px) {
+    footer {
+      padding: 2em 1em;
+    }
+    .social-icon {
+      width: 2em;
+      height: 2em;
+    }
+  }
+  
+
+
+/* Barra de rolagem */
+::-webkit-scrollbar {
+    width: 7px; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #340464;/
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #340464;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}

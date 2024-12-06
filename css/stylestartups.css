@@ -1,0 +1,268 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* Logo */
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Navbar */
+.navbar-nav {
+    gap: 1px;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    padding: 10px 10px;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    line-height: 29px;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #000000 !important;
+    transition: color 0.7s ease;
+}
+
+.navbar-nav .nav-item:nth-last-child(2) {
+    margin-right: 43px;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/* Botão "Fale conosco" */
+.btn-contact {
+    background-color: #520660;
+    color: white;
+    border: none;
+    padding: 6px 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-contact:hover {
+    background-color: #ffffff;
+    color: #520660;
+    transition: ease-out 0.7s;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+}
+    
+.breadcrumb a { 
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #5A15A6;
+    text-decoration: none;
+}
+    
+.breadcrumb p {
+    margin: 0;
+    padding: 0 5px;
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6F7485;
+}
+
+.barraStartup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+    border-top: 1px solid #CAD1EB;
+    background-color: #FAFAFB;   
+}
+
+.barraStartup h2 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: #5A15A6;
+}
+
+.texto-imagem {
+    padding: 4em 0;
+    text-align: left;
+}
+
+.texto-imagem img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.texto {
+    margin-top: -80px;
+    margin-left: -40px;
+}
+
+.texto-imagem h3 {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #320065;
+}
+
+.texto-imagem span {
+    font-weight: 700; 
+}
+
+.texto-imagem p {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #655679;
+}
+
+.telefone {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.btn-site {
+    background-color: #520660;
+    color: white;
+    border: none;
+    padding: 6px 48px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn-site:hover {
+    background-color: #655679;
+    color: #520660;
+    transition: ease-out 0.7s;
+}
+
+.telefone a {
+    font-family: "Sora", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #6B6976;
+}
+
+
+    footer {
+        background-color: #520660;
+        padding-top: 4em;
+        padding-bottom: 0.8em;
+      }
+      
+      .social-icon {
+        border: 1px solid white;
+        padding: 10px;
+        width: 2.5em;
+        height: 2.5em;
+      }
+      
+      .social-icon:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      
+      footer a {
+        text-decoration: none;
+        color: white;
+      }
+      
+      footer .menu, footer .content-contato {
+      display: flex;
+      flex-direction: column;
+        }  
+    
+        footer h4 {
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        font-size: 20px;
+        color: white;
+        margin-bottom: 10px;
+        }
+    
+        footer ul {
+        padding-left: 0;
+        list-style-type: disc;
+        margin-left: 0;
+        }
+    
+        footer li {
+        font-family: "Sora", sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: white;
+        padding-left: 20px;
+        position: relative;
+        }
+    
+        footer li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 5px;
+        height: 5px;
+        background-color: white;
+        border-radius: 100%;
+        margin-top: 10px;
+        }
+        
+        footer .menu ul {
+            list-style-type: disc;
+        }
+      
+    @media (max-width: 576px) {
+    footer li {
+        padding-left: 15px;
+    }
+    }
+      
+      
+      @media (max-width: 576px) {
+        footer {
+          padding: 2em 1em;
+        }
+        .social-icon {
+          width: 2em;
+          height: 2em;
+        }
+      }
