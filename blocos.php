@@ -17,11 +17,11 @@
     if(get_row_layout() == 'sessao_texto_imagem' && get_sub_field('exibir') ):
         get_template_part('template-parts-blocos/sessao_texto_imagem');
 
-    elseif(get_row_layout() == 'sessao_planos_banner' && get_sub_field('exibir') ):
-        get_template_part('template-parts-blocos/sessao_planos_banner');
+    elseif(get_row_layout() == '' && get_sub_field('exibir') ):
+        get_template_part('template-parts-blocos/');
 
-    elseif(get_row_layout() == 'sessao_beneficios' && get_sub_field('exibir') ):
-        get_template_part('template-parts-blocos/sessao_beneficios');
+    elseif(get_row_layout() == 'sessao-quem-somos' && get_sub_field('exibir') ):
+        get_template_part('template-parts/sessao-quem-somos');
 
     elseif(get_row_layout() == 'sessao_servicos' && get_sub_field('exibir') ):
         get_template_part('template-parts-blocos/sessao_servicos');
